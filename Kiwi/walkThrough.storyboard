@@ -11,6 +11,7 @@
             <string>Lato-Bold</string>
             <string>Lato-Bold</string>
             <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -49,7 +50,7 @@
                                     <constraint firstAttribute="height" constant="57" id="5X6-l8-B0j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
-                                <state key="normal" title="LETS GET STARTED">
+                                <state key="normal" title="LET'S GET STARTED">
                                     <color key="titleColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,6 +64,9 @@
                                         <include reference="5X6-l8-B0j"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="Nov-oJ-CYL" kind="push" id="3p2-2h-fpH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPERIENCE." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uE-5V-lB1">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -231,6 +235,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s88-Jd-06V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="294" y="339"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YAC-em-bHP">
+            <objects>
+                <viewController id="MWQ-m3-jXD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tau-zX-gBR"/>
+                        <viewControllerLayoutGuide type="bottom" id="GzS-wL-czp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FRI-m1-EF1">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LET&quot;S GET TO KNOW EACH OTHER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URc-qX-9XJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="87" width="322" height="82"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="URc-qX-9XJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="URc-qX-9XJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mji-2H-X7J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OpI-mt-vdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="339"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="33g-6P-P1X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nov-oJ-CYL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GSo-H5-QAu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6K5-n5-6FW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MWQ-m3-jXD" kind="relationship" relationship="rootViewController" id="a97-Dv-SXW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ErB-pL-PQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003.5" y="339"/>
         </scene>
     </scenes>
     <resources>
