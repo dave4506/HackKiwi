@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7R1-wK-lvb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
+            <string>Lato-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +27,186 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kiwi blank" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-7e-ZrT">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BgF-7e-ZrT" secondAttribute="height" multiplier="1:1" id="S1N-Ry-8mF"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="S1N-Ry-8mF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="S1N-Ry-8mF"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KIWI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQC-2F-yM9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="134.5" y="328" width="127" height="70"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SWEET AND SOUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cL-7y-r5P">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="136.5" y="406" width="123.5" height="16.5"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HACKING." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwS-g6-SDI">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="166.5" y="430.5" width="67" height="16.5"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTy-uj-eMP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y1v-A7-sFy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeG-dM-Kkr">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Ew3-va-QYS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ew3-va-QYS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Ew3-va-QYS"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="signUpAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sUf-Pg-XBQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.73725490196078436" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hwS-g6-SDI" firstAttribute="top" secondItem="7cL-7y-r5P" secondAttribute="bottom" constant="8" id="Aqr-Ck-WGN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BgF-7e-ZrT" secondAttribute="trailing" constant="34" id="BVc-NN-C1V"/>
+                            <constraint firstAttribute="centerX" secondItem="7cL-7y-r5P" secondAttribute="centerX" constant="2" id="NKJ-DD-EP9"/>
+                            <constraint firstItem="RQC-2F-yM9" firstAttribute="top" secondItem="BgF-7e-ZrT" secondAttribute="bottom" constant="-34" id="NrR-OM-Zy9"/>
+                            <constraint firstItem="7cL-7y-r5P" firstAttribute="top" secondItem="RQC-2F-yM9" secondAttribute="bottom" constant="8" id="X3S-nW-12Y"/>
+                            <constraint firstAttribute="centerX" secondItem="VTy-uj-eMP" secondAttribute="centerX" id="Yky-Q3-W0w"/>
+                            <constraint firstAttribute="centerX" secondItem="RQC-2F-yM9" secondAttribute="centerX" constant="2" id="Yyx-Ue-o3E"/>
+                            <constraint firstItem="BgF-7e-ZrT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-2" id="bGX-dR-Zkf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="VTy-uj-eMP" secondAttribute="bottom" constant="37" id="iKx-JH-gm0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QeG-dM-Kkr" secondAttribute="trailing" constant="51" id="prp-gR-9b5"/>
+                            <constraint firstAttribute="centerX" secondItem="BgF-7e-ZrT" secondAttribute="centerX" id="sd6-m3-nqB"/>
+                            <constraint firstAttribute="centerX" secondItem="hwS-g6-SDI" secondAttribute="centerX" id="uVg-BP-dTJ"/>
+                            <constraint firstAttribute="centerX" secondItem="QeG-dM-Kkr" secondAttribute="centerX" id="wIj-97-Y5l"/>
+                            <constraint firstItem="VTy-uj-eMP" firstAttribute="top" secondItem="QeG-dM-Kkr" secondAttribute="bottom" constant="8" id="zZm-5i-mu7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BgF-7e-ZrT"/>
+                                <exclude reference="RQC-2F-yM9"/>
+                                <exclude reference="7cL-7y-r5P"/>
+                                <exclude reference="hwS-g6-SDI"/>
+                                <exclude reference="VTy-uj-eMP"/>
+                                <exclude reference="QeG-dM-Kkr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="iKx-JH-gm0"/>
+                                <exclude reference="NKJ-DD-EP9"/>
+                                <exclude reference="X3S-nW-12Y"/>
+                                <exclude reference="NrR-OM-Zy9"/>
+                                <exclude reference="Yyx-Ue-o3E"/>
+                                <exclude reference="Aqr-Ck-WGN"/>
+                                <exclude reference="uVg-BP-dTJ"/>
+                                <exclude reference="prp-gR-9b5"/>
+                                <exclude reference="wIj-97-Y5l"/>
+                                <exclude reference="Yky-Q3-W0w"/>
+                                <exclude reference="zZm-5i-mu7"/>
+                                <exclude reference="BVc-NN-C1V"/>
+                                <exclude reference="bGX-dR-Zkf"/>
+                                <exclude reference="sd6-m3-nqB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="BgF-7e-ZrT"/>
+                                <include reference="RQC-2F-yM9"/>
+                                <include reference="7cL-7y-r5P"/>
+                                <include reference="hwS-g6-SDI"/>
+                                <include reference="VTy-uj-eMP"/>
+                                <include reference="QeG-dM-Kkr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="iKx-JH-gm0"/>
+                                <include reference="NKJ-DD-EP9"/>
+                                <include reference="X3S-nW-12Y"/>
+                                <include reference="NrR-OM-Zy9"/>
+                                <include reference="Yyx-Ue-o3E"/>
+                                <include reference="Aqr-Ck-WGN"/>
+                                <include reference="uVg-BP-dTJ"/>
+                                <include reference="prp-gR-9b5"/>
+                                <include reference="wIj-97-Y5l"/>
+                                <include reference="Yky-Q3-W0w"/>
+                                <include reference="zZm-5i-mu7"/>
+                                <include reference="BVc-NN-C1V"/>
+                                <include reference="bGX-dR-Zkf"/>
+                                <include reference="sd6-m3-nqB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="9Fe-IY-lQE"/>
+                    <connections>
+                        <outlet property="logInButton" destination="VTy-uj-eMP" id="CcN-9t-Q8n"/>
+                        <outlet property="signUpButton" destination="QeG-dM-Kkr" id="Jy4-tG-efw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1266" y="-288"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bIK-1l-xzp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7R1-wK-lvb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gQb-nD-ZuW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="zKz-kw-NY3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bn-MI-F4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="-288"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kiwi blank" width="1024" height="1024"/>
+    </resources>
 </document>

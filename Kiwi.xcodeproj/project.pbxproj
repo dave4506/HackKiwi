@@ -18,12 +18,17 @@
 		070BCB051B5D4C1D004C9C8D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCB041B5D4C1D004C9C8D /* SystemConfiguration.framework */; };
 		070BCB071B5D4C24004C9C8D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCB061B5D4C24004C9C8D /* libz.dylib */; };
 		070BCB091B5D4C2C004C9C8D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCB081B5D4C2C004C9C8D /* libsqlite3.dylib */; };
+		073320BB1B5D6B8000416270 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 073320B81B5D6B8000416270 /* ProgressHUD.bundle */; };
+		073320BC1B5D6B8000416270 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 073320BA1B5D6B8000416270 /* ProgressHUD.m */; };
 		07363B131B5D49BA00709C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07363B121B5D49BA00709C14 /* AppDelegate.swift */; };
 		07363B151B5D49BA00709C14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07363B141B5D49BA00709C14 /* ViewController.swift */; };
 		07363B181B5D49BA00709C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07363B161B5D49BA00709C14 /* Main.storyboard */; };
 		07363B1A1B5D49BA00709C14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07363B191B5D49BA00709C14 /* Images.xcassets */; };
 		07363B1D1B5D49BA00709C14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07363B1B1B5D49BA00709C14 /* LaunchScreen.xib */; };
 		07363B291B5D49BA00709C14 /* KiwiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07363B281B5D49BA00709C14 /* KiwiTests.swift */; };
+		0756EBD51B5D5D1E00E1B69D /* signIn:Up.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */; };
+		0756EBD71B5D62DE00E1B69D /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756EBD61B5D62DE00E1B69D /* signUpVC.swift */; };
+		07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07967E5E1B5D73DB00CF4ADD /* signInVC.swift */; };
 		4C4DD5C0217DA69CD994D119 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDA2CCDE3F7A20B2DC81D1D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,9 @@
 		070BCB041B5D4C1D004C9C8D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		070BCB061B5D4C24004C9C8D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		070BCB081B5D4C2C004C9C8D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		073320B81B5D6B8000416270 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		073320B91B5D6B8000416270 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		073320BA1B5D6B8000416270 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		07363B0D1B5D49BA00709C14 /* Kiwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07363B111B5D49BA00709C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07363B121B5D49BA00709C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +68,11 @@
 		07363B221B5D49BA00709C14 /* KiwiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiwiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07363B271B5D49BA00709C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07363B281B5D49BA00709C14 /* KiwiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiTests.swift; sourceTree = "<group>"; };
+		0756EBD21B5D571E00E1B69D /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		0756EBD31B5D572700E1B69D /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "signIn:Up.storyboard"; sourceTree = "<group>"; };
+		0756EBD61B5D62DE00E1B69D /* signUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
+		07967E5E1B5D73DB00CF4ADD /* signInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
 		690622F687E210C49BA277DC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D5F2E3C0F706D9215307F387 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EFDA2CCDE3F7A20B2DC81D1D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073320B71B5D6B8000416270 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				073320B81B5D6B8000416270 /* ProgressHUD.bundle */,
+				073320B91B5D6B8000416270 /* ProgressHUD.h */,
+				073320BA1B5D6B8000416270 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 		07363B041B5D49B900709C14 = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +143,10 @@
 			children = (
 				07363B121B5D49BA00709C14 /* AppDelegate.swift */,
 				07363B141B5D49BA00709C14 /* ViewController.swift */,
+				0756EBD61B5D62DE00E1B69D /* signUpVC.swift */,
 				07363B161B5D49BA00709C14 /* Main.storyboard */,
+				0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */,
+				07967E5E1B5D73DB00CF4ADD /* signInVC.swift */,
 				07363B191B5D49BA00709C14 /* Images.xcassets */,
 				07363B1B1B5D49BA00709C14 /* LaunchScreen.xib */,
 				07363B101B5D49BA00709C14 /* Supporting Files */,
@@ -132,6 +158,7 @@
 		07363B101B5D49BA00709C14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0756EBD11B5D56EC00E1B69D /* Fonts */,
 				07363B111B5D49BA00709C14 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -154,6 +181,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0756EBD11B5D56EC00E1B69D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0756EBD21B5D571E00E1B69D /* Lato-Thin.ttf */,
+				0756EBD31B5D572700E1B69D /* Lato-Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		4F6D6D70B289FC293495CC5D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +202,7 @@
 		571CDFB4FBC8B70842E36128 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				073320B71B5D6B8000416270 /* ProgressHUD */,
 				070BCB081B5D4C2C004C9C8D /* libsqlite3.dylib */,
 				070BCB061B5D4C24004C9C8D /* libz.dylib */,
 				070BCB041B5D4C1D004C9C8D /* SystemConfiguration.framework */,
@@ -267,6 +304,8 @@
 			files = (
 				07363B181B5D49BA00709C14 /* Main.storyboard in Resources */,
 				07363B1D1B5D49BA00709C14 /* LaunchScreen.xib in Resources */,
+				0756EBD51B5D5D1E00E1B69D /* signIn:Up.storyboard in Resources */,
+				073320BB1B5D6B8000416270 /* ProgressHUD.bundle in Resources */,
 				07363B1A1B5D49BA00709C14 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,8 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0756EBD71B5D62DE00E1B69D /* signUpVC.swift in Sources */,
 				07363B151B5D49BA00709C14 /* ViewController.swift in Sources */,
+				073320BC1B5D6B8000416270 /* ProgressHUD.m in Sources */,
 				07363B131B5D49BA00709C14 /* AppDelegate.swift in Sources */,
+				07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
