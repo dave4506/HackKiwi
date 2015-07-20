@@ -29,6 +29,12 @@
 		0756EBD51B5D5D1E00E1B69D /* signIn:Up.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */; };
 		0756EBD71B5D62DE00E1B69D /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756EBD61B5D62DE00E1B69D /* signUpVC.swift */; };
 		075BF2BD1B5D96D900FCBB82 /* walk2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BF2BC1B5D96D900FCBB82 /* walk2VC.swift */; };
+		0770628B1B5DA3E9002C81AB /* walk3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770628A1B5DA3E9002C81AB /* walk3VC.swift */; };
+		0770628D1B5DA4B2002C81AB /* walkSkillTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770628C1B5DA4B2002C81AB /* walkSkillTVC.swift */; };
+		077062911B5DB125002C81AB /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770628F1B5DB125002C81AB /* TagListView.swift */; };
+		077062921B5DB125002C81AB /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077062901B5DB125002C81AB /* TagView.swift */; };
+		077062941B5DB4EC002C81AB /* walk4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077062931B5DB4EC002C81AB /* walk4VC.swift */; };
+		077062961B5DB5C7002C81AB /* central.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077062951B5DB5C7002C81AB /* central.storyboard */; };
 		07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07967E5E1B5D73DB00CF4ADD /* signInVC.swift */; };
 		07F7D8DB1B5D78C90047C0D0 /* walkThrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7D8DA1B5D78C90047C0D0 /* walkThrough.storyboard */; };
 		07F7D8DD1B5D7C190047C0D0 /* walk1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */; };
@@ -77,6 +83,12 @@
 		0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "signIn:Up.storyboard"; sourceTree = "<group>"; };
 		0756EBD61B5D62DE00E1B69D /* signUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
 		075BF2BC1B5D96D900FCBB82 /* walk2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk2VC.swift; sourceTree = "<group>"; };
+		0770628A1B5DA3E9002C81AB /* walk3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk3VC.swift; sourceTree = "<group>"; };
+		0770628C1B5DA4B2002C81AB /* walkSkillTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walkSkillTVC.swift; sourceTree = "<group>"; };
+		0770628F1B5DB125002C81AB /* TagListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
+		077062901B5DB125002C81AB /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		077062931B5DB4EC002C81AB /* walk4VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk4VC.swift; sourceTree = "<group>"; };
+		077062951B5DB5C7002C81AB /* central.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = central.storyboard; sourceTree = "<group>"; };
 		07967E5E1B5D73DB00CF4ADD /* signInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
 		07F7D8DA1B5D78C90047C0D0 /* walkThrough.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = walkThrough.storyboard; sourceTree = "<group>"; };
 		07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk1VC.swift; sourceTree = "<group>"; };
@@ -156,9 +168,13 @@
 				07363B161B5D49BA00709C14 /* Main.storyboard */,
 				0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */,
 				07F7D8DA1B5D78C90047C0D0 /* walkThrough.storyboard */,
+				0770628C1B5DA4B2002C81AB /* walkSkillTVC.swift */,
 				075BF2BC1B5D96D900FCBB82 /* walk2VC.swift */,
+				077062931B5DB4EC002C81AB /* walk4VC.swift */,
 				07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */,
+				077062951B5DB5C7002C81AB /* central.storyboard */,
 				07967E5E1B5D73DB00CF4ADD /* signInVC.swift */,
+				0770628A1B5DA3E9002C81AB /* walk3VC.swift */,
 				07363B191B5D49BA00709C14 /* Images.xcassets */,
 				07363B1B1B5D49BA00709C14 /* LaunchScreen.xib */,
 				07363B101B5D49BA00709C14 /* Supporting Files */,
@@ -202,6 +218,15 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		0770628E1B5DB125002C81AB /* TagListView */ = {
+			isa = PBXGroup;
+			children = (
+				0770628F1B5DB125002C81AB /* TagListView.swift */,
+				077062901B5DB125002C81AB /* TagView.swift */,
+			);
+			path = TagListView;
+			sourceTree = "<group>";
+		};
 		4F6D6D70B289FC293495CC5D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +239,7 @@
 		571CDFB4FBC8B70842E36128 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0770628E1B5DB125002C81AB /* TagListView */,
 				07F7D8DE1B5D8E370047C0D0 /* camera.h */,
 				07F7D8DF1B5D8E370047C0D0 /* camera.m */,
 				073320B71B5D6B8000416270 /* ProgressHUD */,
@@ -321,6 +347,7 @@
 				0756EBD51B5D5D1E00E1B69D /* signIn:Up.storyboard in Resources */,
 				073320BB1B5D6B8000416270 /* ProgressHUD.bundle in Resources */,
 				07363B1A1B5D49BA00709C14 /* Images.xcassets in Resources */,
+				077062961B5DB5C7002C81AB /* central.storyboard in Resources */,
 				07F7D8DB1B5D78C90047C0D0 /* walkThrough.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,13 +415,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0756EBD71B5D62DE00E1B69D /* signUpVC.swift in Sources */,
+				077062941B5DB4EC002C81AB /* walk4VC.swift in Sources */,
 				07363B151B5D49BA00709C14 /* ViewController.swift in Sources */,
 				075BF2BD1B5D96D900FCBB82 /* walk2VC.swift in Sources */,
 				073320BC1B5D6B8000416270 /* ProgressHUD.m in Sources */,
 				07F7D8E01B5D8E370047C0D0 /* camera.m in Sources */,
+				0770628B1B5DA3E9002C81AB /* walk3VC.swift in Sources */,
+				0770628D1B5DA4B2002C81AB /* walkSkillTVC.swift in Sources */,
+				077062911B5DB125002C81AB /* TagListView.swift in Sources */,
 				07363B131B5D49BA00709C14 /* AppDelegate.swift in Sources */,
 				07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */,
 				07F7D8DD1B5D7C190047C0D0 /* walk1VC.swift in Sources */,
+				077062921B5DB125002C81AB /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

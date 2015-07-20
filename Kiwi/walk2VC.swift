@@ -36,6 +36,7 @@ class walk2VC: UIViewController,UIActionSheetDelegate,UIImagePickerControllerDel
             user.saveInBackgroundWithBlock {
                 (succeeded: Bool, error: NSError?) -> Void in
                 ProgressHUD.showSuccess(nil)
+                self.performSegueWithIdentifier("skill", sender: self)
                 if error != nil {
                     ProgressHUD.showError("Problem Connecting!")
                 }

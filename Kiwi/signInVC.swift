@@ -22,9 +22,15 @@ class signInVC: UIViewController {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
                ProgressHUD.showSuccess(nil)
-                let main = UIStoryboard(name: "walkThrough", bundle: nil)
-                let vc = main.instantiateViewControllerWithIdentifier("navCon") as! UINavigationController
-                self.showViewController(vc, sender: self)
+                if PFUser.currentUser()!["first"] as! Bool == true {
+                    let main = UIStoryboard(name: "walkThrough", bundle: nil)
+                    let vc = main.instantiateViewControllerWithIdentifier("navCon") as! UINavigationController
+                    self.showViewController(vc, sender: self)
+                }else{
+                    let main = UIStoryboard(name: "central", bundle: nil)
+                    let vc = main.instantiateViewControllerWithIdentifier("navCon") as! UINavigationController
+                    self.showViewController(vc, sender: self)
+                }
             } else {
                 ProgressHUD.showError("Login Invalid.")
             }
