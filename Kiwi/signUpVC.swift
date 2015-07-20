@@ -38,6 +38,7 @@ class signUpVC: UIViewController {
             ProgressHUD.showError("Passwords don't match!")
         }
         user.username = userName.text
+        user["first"] = true;
         if pass == true {
             ProgressHUD.show(nil)
             user.signUpInBackgroundWithBlock {

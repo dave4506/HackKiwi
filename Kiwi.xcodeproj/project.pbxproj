@@ -29,6 +29,8 @@
 		0756EBD51B5D5D1E00E1B69D /* signIn:Up.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */; };
 		0756EBD71B5D62DE00E1B69D /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756EBD61B5D62DE00E1B69D /* signUpVC.swift */; };
 		07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07967E5E1B5D73DB00CF4ADD /* signInVC.swift */; };
+		07F7D8DB1B5D78C90047C0D0 /* walkThrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7D8DA1B5D78C90047C0D0 /* walkThrough.storyboard */; };
+		07F7D8DD1B5D7C190047C0D0 /* walk1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */; };
 		4C4DD5C0217DA69CD994D119 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDA2CCDE3F7A20B2DC81D1D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,8 @@
 		0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "signIn:Up.storyboard"; sourceTree = "<group>"; };
 		0756EBD61B5D62DE00E1B69D /* signUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
 		07967E5E1B5D73DB00CF4ADD /* signInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
+		07F7D8DA1B5D78C90047C0D0 /* walkThrough.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = walkThrough.storyboard; sourceTree = "<group>"; };
+		07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk1VC.swift; sourceTree = "<group>"; };
 		690622F687E210C49BA277DC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D5F2E3C0F706D9215307F387 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EFDA2CCDE3F7A20B2DC81D1D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,8 @@
 				0756EBD61B5D62DE00E1B69D /* signUpVC.swift */,
 				07363B161B5D49BA00709C14 /* Main.storyboard */,
 				0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */,
+				07F7D8DA1B5D78C90047C0D0 /* walkThrough.storyboard */,
+				07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */,
 				07967E5E1B5D73DB00CF4ADD /* signInVC.swift */,
 				07363B191B5D49BA00709C14 /* Images.xcassets */,
 				07363B1B1B5D49BA00709C14 /* LaunchScreen.xib */,
@@ -307,6 +313,7 @@
 				0756EBD51B5D5D1E00E1B69D /* signIn:Up.storyboard in Resources */,
 				073320BB1B5D6B8000416270 /* ProgressHUD.bundle in Resources */,
 				07363B1A1B5D49BA00709C14 /* Images.xcassets in Resources */,
+				07F7D8DB1B5D78C90047C0D0 /* walkThrough.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +384,7 @@
 				073320BC1B5D6B8000416270 /* ProgressHUD.m in Sources */,
 				07363B131B5D49BA00709C14 /* AppDelegate.swift in Sources */,
 				07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */,
+				07F7D8DD1B5D7C190047C0D0 /* walk1VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
