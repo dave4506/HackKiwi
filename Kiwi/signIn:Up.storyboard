@@ -58,18 +58,27 @@
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="118" y="306" width="163" height="41"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO CREDIT CARD OR REAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9n-lZ-feQ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="130" y="348" width="154.5" height="14"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KIWIS NEEDED." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zi7-PA-FQc">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="157" y="370" width="87.5" height="14"/>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVI-md-jFE" customClass="IsaoTextField" customModule="TextFieldEffects">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -99,7 +108,8 @@
                                         <exclude reference="Lch-Sn-kZC"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="435" width="329" height="45"/>
                                     <mask key="constraints">
                                         <include reference="Lch-Sn-kZC"/>
                                     </mask>
@@ -133,7 +143,8 @@
                                         <exclude reference="HKF-Ti-Xt2"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="525" width="329" height="45"/>
                                     <mask key="constraints">
                                         <include reference="HKF-Ti-Xt2"/>
                                     </mask>
@@ -216,7 +227,8 @@
                                         <exclude reference="MMG-rc-W3m"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="390" width="329" height="45"/>
                                     <mask key="constraints">
                                         <include reference="MMG-rc-W3m"/>
                                     </mask>
@@ -250,7 +262,8 @@
                                         <exclude reference="2PG-j3-6LZ"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="480" width="329" height="45"/>
                                     <mask key="constraints">
                                         <include reference="2PG-j3-6LZ"/>
                                     </mask>
@@ -286,7 +299,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="BL2-z6-JcW" firstAttribute="top" secondItem="Zi7-PA-FQc" secondAttribute="bottom" constant="6" id="qAw-9o-frI"/>
-                            <constraint firstItem="UAe-xG-py0" firstAttribute="top" secondItem="i9R-5q-ukB" secondAttribute="bottom" constant="32" id="sYA-Qx-0A3"/>
+                            <constraint firstItem="UAe-xG-py0" firstAttribute="top" secondItem="i9R-5q-ukB" secondAttribute="bottom" id="sYA-Qx-0A3"/>
                             <constraint firstItem="HVI-md-jFE" firstAttribute="top" secondItem="BL2-z6-JcW" secondAttribute="bottom" id="u3j-Mw-Yv1"/>
                             <constraint firstItem="sO0-xJ-GBG" firstAttribute="top" secondItem="i9R-5q-ukB" secondAttribute="bottom" constant="8" id="vgp-1n-WN6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="50Y-wU-vL8" secondAttribute="trailing" constant="73" id="xyI-VK-RFr"/>
@@ -429,18 +442,27 @@
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="79" y="382" width="242" height="35"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOPEFULLY YOU DIDN&quot;T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzY-KK-fY6">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="124" y="418" width="153" height="15.5"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISS KIWI." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4Z-il-OOb">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="168" y="433" width="66.5" height="15.5"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqO-lX-vzl">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -494,7 +516,8 @@
                                         <exclude reference="XsO-QF-FW2"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="56" y="454" width="289" height="45"/>
                                     <mask key="constraints">
                                         <include reference="XsO-QF-FW2"/>
                                     </mask>
@@ -528,7 +551,8 @@
                                         <exclude reference="2KV-TY-oRg"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="57" y="507" width="289" height="45"/>
                                     <mask key="constraints">
                                         <include reference="2KV-TY-oRg"/>
                                     </mask>

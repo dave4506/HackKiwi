@@ -23,7 +23,7 @@ class signInVC: UIViewController {
             if user != nil {
                ProgressHUD.showSuccess(nil)
                 let main = UIStoryboard(name: "walkThrough", bundle: nil)
-                let vc = main.instantiateViewControllerWithIdentifier("walk") as! walk1VC
+                let vc = main.instantiateViewControllerWithIdentifier("navCon") as! UINavigationController
                 self.showViewController(vc, sender: self)
             } else {
                 ProgressHUD.showError("Login Invalid.")
