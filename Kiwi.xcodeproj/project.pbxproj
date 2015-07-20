@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070BCAF61B5D4BC1004C9C8D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCAF41B5D4BC1004C9C8D /* Bolts.framework */; };
+		070BCAF71B5D4BC1004C9C8D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCAF51B5D4BC1004C9C8D /* Parse.framework */; };
+		070BCAF91B5D4BED004C9C8D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCAF81B5D4BED004C9C8D /* AudioToolbox.framework */; };
+		070BCAFB1B5D4BF5004C9C8D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCAFA1B5D4BF5004C9C8D /* CFNetwork.framework */; };
+		070BCAFD1B5D4BFC004C9C8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCAFC1B5D4BFC004C9C8D /* CoreGraphics.framework */; };
+		070BCAFF1B5D4C05004C9C8D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCAFE1B5D4C05004C9C8D /* QuartzCore.framework */; };
+		070BCB011B5D4C0E004C9C8D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCB001B5D4C0E004C9C8D /* Security.framework */; };
+		070BCB031B5D4C16004C9C8D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCB021B5D4C16004C9C8D /* StoreKit.framework */; };
+		070BCB051B5D4C1D004C9C8D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCB041B5D4C1D004C9C8D /* SystemConfiguration.framework */; };
+		070BCB071B5D4C24004C9C8D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCB061B5D4C24004C9C8D /* libz.dylib */; };
+		070BCB091B5D4C2C004C9C8D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 070BCB081B5D4C2C004C9C8D /* libsqlite3.dylib */; };
 		07363B131B5D49BA00709C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07363B121B5D49BA00709C14 /* AppDelegate.swift */; };
 		07363B151B5D49BA00709C14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07363B141B5D49BA00709C14 /* ViewController.swift */; };
 		07363B181B5D49BA00709C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07363B161B5D49BA00709C14 /* Main.storyboard */; };
@@ -28,6 +39,17 @@
 
 /* Begin PBXFileReference section */
 		070BCAF11B5D4B19004C9C8D /* Kiwi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kiwi-Bridging-Header.h"; sourceTree = "<group>"; };
+		070BCAF41B5D4BC1004C9C8D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		070BCAF51B5D4BC1004C9C8D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		070BCAF81B5D4BED004C9C8D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		070BCAFA1B5D4BF5004C9C8D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		070BCAFC1B5D4BFC004C9C8D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		070BCAFE1B5D4C05004C9C8D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		070BCB001B5D4C0E004C9C8D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		070BCB021B5D4C16004C9C8D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		070BCB041B5D4C1D004C9C8D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		070BCB061B5D4C24004C9C8D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		070BCB081B5D4C2C004C9C8D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		07363B0D1B5D49BA00709C14 /* Kiwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07363B111B5D49BA00709C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07363B121B5D49BA00709C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +70,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070BCB091B5D4C2C004C9C8D /* libsqlite3.dylib in Frameworks */,
+				070BCB071B5D4C24004C9C8D /* libz.dylib in Frameworks */,
+				070BCB051B5D4C1D004C9C8D /* SystemConfiguration.framework in Frameworks */,
+				070BCB031B5D4C16004C9C8D /* StoreKit.framework in Frameworks */,
+				070BCB011B5D4C0E004C9C8D /* Security.framework in Frameworks */,
+				070BCAFF1B5D4C05004C9C8D /* QuartzCore.framework in Frameworks */,
+				070BCAFD1B5D4BFC004C9C8D /* CoreGraphics.framework in Frameworks */,
+				070BCAFB1B5D4BF5004C9C8D /* CFNetwork.framework in Frameworks */,
+				070BCAF91B5D4BED004C9C8D /* AudioToolbox.framework in Frameworks */,
 				4C4DD5C0217DA69CD994D119 /* Pods.framework in Frameworks */,
+				070BCAF71B5D4BC1004C9C8D /* Parse.framework in Frameworks */,
+				070BCAF61B5D4BC1004C9C8D /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +166,17 @@
 		571CDFB4FBC8B70842E36128 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				070BCB081B5D4C2C004C9C8D /* libsqlite3.dylib */,
+				070BCB061B5D4C24004C9C8D /* libz.dylib */,
+				070BCB041B5D4C1D004C9C8D /* SystemConfiguration.framework */,
+				070BCB021B5D4C16004C9C8D /* StoreKit.framework */,
+				070BCB001B5D4C0E004C9C8D /* Security.framework */,
+				070BCAFE1B5D4C05004C9C8D /* QuartzCore.framework */,
+				070BCAFC1B5D4BFC004C9C8D /* CoreGraphics.framework */,
+				070BCAFA1B5D4BF5004C9C8D /* CFNetwork.framework */,
+				070BCAF81B5D4BED004C9C8D /* AudioToolbox.framework */,
+				070BCAF41B5D4BC1004C9C8D /* Bolts.framework */,
+				070BCAF51B5D4BC1004C9C8D /* Parse.framework */,
 				EFDA2CCDE3F7A20B2DC81D1D /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -419,6 +463,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Kiwi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,6 +481,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Kiwi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
