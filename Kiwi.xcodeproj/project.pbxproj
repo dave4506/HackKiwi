@@ -40,6 +40,8 @@
 		077062941B5DB4EC002C81AB /* walk4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077062931B5DB4EC002C81AB /* walk4VC.swift */; };
 		077062961B5DB5C7002C81AB /* central.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077062951B5DB5C7002C81AB /* central.storyboard */; };
 		07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07967E5E1B5D73DB00CF4ADD /* signInVC.swift */; };
+		07EDC1E01B5F009B002BC601 /* skillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDC1DF1B5F009B002BC601 /* skillVC.swift */; };
+		07EDC1E21B5F0705002BC601 /* skillTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EDC1E11B5F0705002BC601 /* skillTVC.swift */; };
 		07F7D8DB1B5D78C90047C0D0 /* walkThrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7D8DA1B5D78C90047C0D0 /* walkThrough.storyboard */; };
 		07F7D8DD1B5D7C190047C0D0 /* walk1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */; };
 		07F7D8E01B5D8E370047C0D0 /* camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F7D8DF1B5D8E370047C0D0 /* camera.m */; };
@@ -99,6 +101,8 @@
 		077062931B5DB4EC002C81AB /* walk4VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk4VC.swift; sourceTree = "<group>"; };
 		077062951B5DB5C7002C81AB /* central.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = central.storyboard; sourceTree = "<group>"; };
 		07967E5E1B5D73DB00CF4ADD /* signInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
+		07EDC1DF1B5F009B002BC601 /* skillVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = skillVC.swift; sourceTree = "<group>"; };
+		07EDC1E11B5F0705002BC601 /* skillTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = skillTVC.swift; sourceTree = "<group>"; };
 		07F7D8DA1B5D78C90047C0D0 /* walkThrough.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = walkThrough.storyboard; sourceTree = "<group>"; };
 		07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk1VC.swift; sourceTree = "<group>"; };
 		07F7D8DE1B5D8E370047C0D0 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
@@ -184,9 +188,11 @@
 				076ADCB01B5E1E4D00949710 /* profileVC.swift */,
 				077062951B5DB5C7002C81AB /* central.storyboard */,
 				076ADCAC1B5E1C6F00949710 /* profile.storyboard */,
+				07EDC1DF1B5F009B002BC601 /* skillVC.swift */,
 				07967E5E1B5D73DB00CF4ADD /* signInVC.swift */,
 				076ADCAE1B5E1D4200949710 /* profileTBVC.swift */,
 				076ADCB21B5E9B7C00949710 /* profileSVC.swift */,
+				07EDC1E11B5F0705002BC601 /* skillTVC.swift */,
 				0770628A1B5DA3E9002C81AB /* walk3VC.swift */,
 				07363B191B5D49BA00709C14 /* Images.xcassets */,
 				07363B1B1B5D49BA00709C14 /* LaunchScreen.xib */,
@@ -438,8 +444,10 @@
 				073320BC1B5D6B8000416270 /* ProgressHUD.m in Sources */,
 				07F7D8E01B5D8E370047C0D0 /* camera.m in Sources */,
 				076ADCB31B5E9B7C00949710 /* profileSVC.swift in Sources */,
+				07EDC1E21B5F0705002BC601 /* skillTVC.swift in Sources */,
 				0770628B1B5DA3E9002C81AB /* walk3VC.swift in Sources */,
 				0770628D1B5DA4B2002C81AB /* walkSkillTVC.swift in Sources */,
+				07EDC1E01B5F009B002BC601 /* skillVC.swift in Sources */,
 				077062911B5DB125002C81AB /* TagListView.swift in Sources */,
 				07363B131B5D49BA00709C14 /* AppDelegate.swift in Sources */,
 				07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */,
