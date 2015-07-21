@@ -7,7 +7,7 @@
         <!--Item 2-->
         <scene sceneID="e4i-25-o1t">
             <objects>
-                <viewController storyboardIdentifier="tabCon" id="bYR-Ph-aUY" sceneMemberID="viewController">
+                <viewController id="bYR-Ph-aUY" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="deF-qb-Fwn"/>
                         <viewControllerLayoutGuide type="bottom" id="a3l-VZ-sWS"/>
