@@ -57,11 +57,13 @@ class walk2VC: UIViewController,UIActionSheetDelegate,UIImagePickerControllerDel
     
     override func viewDidLoad() {
         self.next.layer.cornerRadius = 28
-        profile.layoutIfNeeded()
-        self.profile.layer.cornerRadius = profile.frame.size.height/2
         self.profile.clipsToBounds = true;
     }
     
+    override func viewDidLayoutSubviews() {
+        profile.layoutIfNeeded()
+        self.profile.layer.cornerRadius = profile.frame.size.height/2
+    }
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         self.profile.image = image;
         var file:PFFile = PFFile(name: "picture.jpeg", data: UIImageJPEGRepresentation(image, 0.6));

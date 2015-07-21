@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--ProfileSVC-->
+        <scene sceneID="Eed-I3-oVM">
+            <objects>
+                <viewController storyboardIdentifier="profile" id="Mp0-kP-43A" customClass="profileSVC" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ROc-a2-ZGH"/>
+                        <viewControllerLayoutGuide type="bottom" id="DDu-HN-ASt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xIx-Cn-fUR">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWe-rX-VtN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTB-UQ-d3L">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="NE5-5C-YJk"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="NE5-5C-YJk"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="NE5-5C-YJk"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="5fc-Uc-KPV" kind="embed" id="K6L-CK-42D"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eTB-UQ-d3L" secondAttribute="trailing" id="1MU-aF-2lh"/>
+                                    <constraint firstAttribute="centerX" secondItem="eTB-UQ-d3L" secondAttribute="centerX" id="Byu-7K-hzI"/>
+                                    <constraint firstItem="eTB-UQ-d3L" firstAttribute="top" secondItem="SWe-rX-VtN" secondAttribute="top" id="Jjw-Bk-djN"/>
+                                    <constraint firstItem="eTB-UQ-d3L" firstAttribute="leading" secondItem="SWe-rX-VtN" secondAttribute="leading" id="W9n-gh-DVQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="eTB-UQ-d3L" secondAttribute="bottom" constant="-200" id="mLc-Dw-cAR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="eTB-UQ-d3L"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="1MU-aF-2lh"/>
+                                        <exclude reference="Byu-7K-hzI"/>
+                                        <exclude reference="Jjw-Bk-djN"/>
+                                        <exclude reference="W9n-gh-DVQ"/>
+                                        <exclude reference="mLc-Dw-cAR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="eTB-UQ-d3L"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="1MU-aF-2lh"/>
+                                        <include reference="Byu-7K-hzI"/>
+                                        <include reference="Jjw-Bk-djN"/>
+                                        <include reference="W9n-gh-DVQ"/>
+                                        <include reference="mLc-Dw-cAR"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SWe-rX-VtN" firstAttribute="top" secondItem="xIx-Cn-fUR" secondAttribute="top" id="J0d-Ne-jTS"/>
+                            <constraint firstItem="SWe-rX-VtN" firstAttribute="leading" secondItem="xIx-Cn-fUR" secondAttribute="leading" id="fNg-K2-YAj"/>
+                            <constraint firstItem="DDu-HN-ASt" firstAttribute="top" secondItem="SWe-rX-VtN" secondAttribute="bottom" id="fPp-7D-bRw"/>
+                            <constraint firstAttribute="trailing" secondItem="SWe-rX-VtN" secondAttribute="trailing" id="hku-q2-j8l"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="SWe-rX-VtN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="J0d-Ne-jTS"/>
+                                <exclude reference="fNg-K2-YAj"/>
+                                <exclude reference="hku-q2-j8l"/>
+                                <exclude reference="fPp-7D-bRw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="SWe-rX-VtN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="J0d-Ne-jTS"/>
+                                <include reference="fNg-K2-YAj"/>
+                                <include reference="hku-q2-j8l"/>
+                                <include reference="fPp-7D-bRw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="eTB-UQ-d3L" id="PNm-1T-tXf"/>
+                        <outlet property="scrollView" destination="SWe-rX-VtN" id="fTq-Ye-aVI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAk-1O-IO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775.5" y="147.75"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="Y6H-n3-nrA">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="5fc-Uc-KPV" customClass="profileVC" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ead-2U-rS4"/>
+                        <viewControllerLayoutGuide type="bottom" id="PZS-eC-lfg"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wob-YG-qmt">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default cover" translatesAutoresizingMaskIntoConstraints="NO" id="8El-WR-R8g">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8El-WR-R8g" secondAttribute="height" multiplier="400:149" id="d69-Uv-YPE"/>
+                                    <constraint firstAttribute="width" secondItem="8El-WR-R8g" secondAttribute="height" multiplier="50:31" id="rN1-mc-Ugs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="d69-Uv-YPE"/>
+                                        <exclude reference="rN1-mc-Ugs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="d69-Uv-YPE"/>
+                                        <include reference="rN1-mc-Ugs"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="JfE-hM-eAp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JfE-hM-eAp" secondAttribute="height" multiplier="1:1" id="7Ge-HT-MxF"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7Ge-HT-MxF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7Ge-HT-MxF"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8El-WR-R8g" secondAttribute="trailing" id="0k3-IQ-4DV"/>
+                            <constraint firstItem="8El-WR-R8g" firstAttribute="leading" secondItem="Wob-YG-qmt" secondAttribute="leading" id="Fqp-KL-jbL"/>
+                            <constraint firstItem="8El-WR-R8g" firstAttribute="top" secondItem="ead-2U-rS4" secondAttribute="bottom" id="edN-nB-DOf"/>
+                            <constraint firstItem="JfE-hM-eAp" firstAttribute="top" secondItem="8El-WR-R8g" secondAttribute="bottom" constant="-100" id="l4b-pU-Vvc"/>
+                            <constraint firstAttribute="centerX" secondItem="JfE-hM-eAp" secondAttribute="centerX" id="wgw-bb-0sU"/>
+                            <constraint firstItem="JfE-hM-eAp" firstAttribute="leading" secondItem="Wob-YG-qmt" secondAttribute="leadingMargin" constant="84" id="xCa-lB-haO"/>
+                            <constraint firstItem="JfE-hM-eAp" firstAttribute="top" secondItem="8El-WR-R8g" secondAttribute="bottom" constant="-100" id="yTk-j0-SsD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8El-WR-R8g"/>
+                                <exclude reference="JfE-hM-eAp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0k3-IQ-4DV"/>
+                                <exclude reference="Fqp-KL-jbL"/>
+                                <exclude reference="edN-nB-DOf"/>
+                                <exclude reference="l4b-pU-Vvc"/>
+                                <exclude reference="wgw-bb-0sU"/>
+                                <exclude reference="xCa-lB-haO"/>
+                                <exclude reference="yTk-j0-SsD"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8El-WR-R8g"/>
+                                <include reference="JfE-hM-eAp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0k3-IQ-4DV"/>
+                                <include reference="Fqp-KL-jbL"/>
+                                <include reference="edN-nB-DOf"/>
+                                <exclude reference="l4b-pU-Vvc"/>
+                                <include reference="wgw-bb-0sU"/>
+                                <include reference="xCa-lB-haO"/>
+                                <include reference="yTk-j0-SsD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="1000"/>
+                    <connections>
+                        <outlet property="coverImage" destination="8El-WR-R8g" id="IoX-e0-87F"/>
+                        <outlet property="profile" destination="JfE-hM-eAp" id="ZBS-Lg-exj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sS4-3d-H9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64.5" y="222.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Profile" width="800" height="800"/>
+        <image name="default cover" width="1080" height="1080"/>
+    </resources>
+</document>

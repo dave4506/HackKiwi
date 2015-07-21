@@ -29,6 +29,10 @@
 		0756EBD51B5D5D1E00E1B69D /* signIn:Up.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */; };
 		0756EBD71B5D62DE00E1B69D /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756EBD61B5D62DE00E1B69D /* signUpVC.swift */; };
 		075BF2BD1B5D96D900FCBB82 /* walk2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075BF2BC1B5D96D900FCBB82 /* walk2VC.swift */; };
+		076ADCAD1B5E1C6F00949710 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076ADCAC1B5E1C6F00949710 /* profile.storyboard */; };
+		076ADCAF1B5E1D4200949710 /* profileTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076ADCAE1B5E1D4200949710 /* profileTBVC.swift */; };
+		076ADCB11B5E1E4D00949710 /* profileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076ADCB01B5E1E4D00949710 /* profileVC.swift */; };
+		076ADCB31B5E9B7C00949710 /* profileSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076ADCB21B5E9B7C00949710 /* profileSVC.swift */; };
 		0770628B1B5DA3E9002C81AB /* walk3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770628A1B5DA3E9002C81AB /* walk3VC.swift */; };
 		0770628D1B5DA4B2002C81AB /* walkSkillTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770628C1B5DA4B2002C81AB /* walkSkillTVC.swift */; };
 		077062911B5DB125002C81AB /* TagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770628F1B5DB125002C81AB /* TagListView.swift */; };
@@ -83,6 +87,10 @@
 		0756EBD41B5D5D1E00E1B69D /* signIn:Up.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "signIn:Up.storyboard"; sourceTree = "<group>"; };
 		0756EBD61B5D62DE00E1B69D /* signUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
 		075BF2BC1B5D96D900FCBB82 /* walk2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk2VC.swift; sourceTree = "<group>"; };
+		076ADCAC1B5E1C6F00949710 /* profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
+		076ADCAE1B5E1D4200949710 /* profileTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileTBVC.swift; sourceTree = "<group>"; };
+		076ADCB01B5E1E4D00949710 /* profileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
+		076ADCB21B5E9B7C00949710 /* profileSVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileSVC.swift; sourceTree = "<group>"; };
 		0770628A1B5DA3E9002C81AB /* walk3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk3VC.swift; sourceTree = "<group>"; };
 		0770628C1B5DA4B2002C81AB /* walkSkillTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walkSkillTVC.swift; sourceTree = "<group>"; };
 		0770628F1B5DB125002C81AB /* TagListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
@@ -172,8 +180,12 @@
 				075BF2BC1B5D96D900FCBB82 /* walk2VC.swift */,
 				077062931B5DB4EC002C81AB /* walk4VC.swift */,
 				07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */,
+				076ADCB01B5E1E4D00949710 /* profileVC.swift */,
 				077062951B5DB5C7002C81AB /* central.storyboard */,
+				076ADCAC1B5E1C6F00949710 /* profile.storyboard */,
 				07967E5E1B5D73DB00CF4ADD /* signInVC.swift */,
+				076ADCAE1B5E1D4200949710 /* profileTBVC.swift */,
+				076ADCB21B5E9B7C00949710 /* profileSVC.swift */,
 				0770628A1B5DA3E9002C81AB /* walk3VC.swift */,
 				07363B191B5D49BA00709C14 /* Images.xcassets */,
 				07363B1B1B5D49BA00709C14 /* LaunchScreen.xib */,
@@ -344,6 +356,7 @@
 			files = (
 				07363B181B5D49BA00709C14 /* Main.storyboard in Resources */,
 				07363B1D1B5D49BA00709C14 /* LaunchScreen.xib in Resources */,
+				076ADCAD1B5E1C6F00949710 /* profile.storyboard in Resources */,
 				0756EBD51B5D5D1E00E1B69D /* signIn:Up.storyboard in Resources */,
 				073320BB1B5D6B8000416270 /* ProgressHUD.bundle in Resources */,
 				07363B1A1B5D49BA00709C14 /* Images.xcassets in Resources */,
@@ -418,8 +431,11 @@
 				077062941B5DB4EC002C81AB /* walk4VC.swift in Sources */,
 				07363B151B5D49BA00709C14 /* ViewController.swift in Sources */,
 				075BF2BD1B5D96D900FCBB82 /* walk2VC.swift in Sources */,
+				076ADCB11B5E1E4D00949710 /* profileVC.swift in Sources */,
+				076ADCAF1B5E1D4200949710 /* profileTBVC.swift in Sources */,
 				073320BC1B5D6B8000416270 /* ProgressHUD.m in Sources */,
 				07F7D8E01B5D8E370047C0D0 /* camera.m in Sources */,
+				076ADCB31B5E9B7C00949710 /* profileSVC.swift in Sources */,
 				0770628B1B5DA3E9002C81AB /* walk3VC.swift in Sources */,
 				0770628D1B5DA4B2002C81AB /* walkSkillTVC.swift in Sources */,
 				077062911B5DB125002C81AB /* TagListView.swift in Sources */,
