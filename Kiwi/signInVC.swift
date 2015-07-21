@@ -28,7 +28,7 @@ class signInVC: UIViewController {
                     self.showViewController(vc, sender: self)
                 }else{
                     let main = UIStoryboard(name: "central", bundle: nil)
-                    let vc = main.instantiateViewControllerWithIdentifier("tabCon") as! UINavigationController
+                    let vc = main.instantiateViewControllerWithIdentifier("tabCon") as! UITabBarController
                     self.showViewController(vc, sender: self)
                 }
             } else {

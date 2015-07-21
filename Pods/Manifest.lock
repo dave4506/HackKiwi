@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (1.2.3)
+  - Bolts/Tasks (1.2.0)
+  - Firebase (2.3.3)
+  - IQKeyboardManager (3.2.4)
+  - JSQMessagesViewController (7.1.0):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - Parse (1.7.5.1):
+    - Bolts/Tasks (>= 1.2.0)
+  - ParseUI (1.1.4):
+    - Parse (~> 1.7)
+  - TagListView (0.1.4)
+  - TextFieldEffects (0.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 1.2)
+  - Firebase (>= 2.3.3)
+  - IQKeyboardManager
+  - JSQMessagesViewController
+  - ParseUI
+  - TagListView
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  Firebase: 2db60272f68ce40c7d47e5ae6eddc16977c65d4c
+  IQKeyboardManager: 555b1231fefafb21b19278d7cca72986a27b748b
+  JSQMessagesViewController: ca11f86fa68ca70835f05e169df9244147c1dc40
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  Parse: 7dd027063c30a010356ec67515aca7787512b0ef
+  ParseUI: d1228541b02a36a7354c8f47747f5f7a89cf1ff0
+  TagListView: 86fcd7616973096aeaaf71bf774eecacf483c1fb
+  TextFieldEffects: 757bb7871bb742d95e0782e85da923bbaf97660f
+
+COCOAPODS: 0.38.0
