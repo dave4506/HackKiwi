@@ -91,6 +91,7 @@
 		076ADCAE1B5E1D4200949710 /* profileTBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileTBVC.swift; sourceTree = "<group>"; };
 		076ADCB01B5E1E4D00949710 /* profileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileVC.swift; sourceTree = "<group>"; };
 		076ADCB21B5E9B7C00949710 /* profileSVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileSVC.swift; sourceTree = "<group>"; };
+		076ADCB41B5EC26200949710 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		0770628A1B5DA3E9002C81AB /* walk3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walk3VC.swift; sourceTree = "<group>"; };
 		0770628C1B5DA4B2002C81AB /* walkSkillTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = walkSkillTVC.swift; sourceTree = "<group>"; };
 		0770628F1B5DB125002C81AB /* TagListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagListView.swift; sourceTree = "<group>"; };
@@ -224,6 +225,7 @@
 		0756EBD11B5D56EC00E1B69D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				076ADCB41B5EC26200949710 /* Lato-Regular.ttf */,
 				0756EBD21B5D571E00E1B69D /* Lato-Thin.ttf */,
 				0756EBD31B5D572700E1B69D /* Lato-Bold.ttf */,
 			);

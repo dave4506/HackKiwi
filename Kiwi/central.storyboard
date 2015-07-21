@@ -32,6 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cDB-GL-lZQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RS7-nr-Z3x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -51,6 +52,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PNp-EY-fov"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gYW-ZI-eaw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -69,6 +71,7 @@
                         <viewControllerLayoutGuide type="bottom" id="GoA-pq-vEs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CvB-GD-Uac">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
