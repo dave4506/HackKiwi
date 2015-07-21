@@ -21,7 +21,7 @@ class walk4VC: UIViewController {
             (succeeded: Bool, error: NSError?) -> Void in
                 ProgressHUD.showSuccess(nil)
                 let main = UIStoryboard(name: "central", bundle: nil)
-                let vc = main.instantiateViewControllerWithIdentifier("navCon") as! UINavigationController
+                let vc = main.instantiateViewControllerWithIdentifier("tabCon") as! UINavigationController
                 self.showViewController(vc, sender: self)
             if error != nil {
                 ProgressHUD.showError("Problem Connecting!")
