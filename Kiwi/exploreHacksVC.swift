@@ -9,26 +9,50 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import Parse
 
 class exploreHacksVC:UIViewController {
-    
+    var eventList:NSMutableArray = []
     override func viewDidLoad() {
-        
-    }
-    
-    override func viewWillAppear(animated: Bool) {
         self.updateHacks()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        
+    }
+    
     func updateHacks(){
-        println("_____________________________________________________")
-        Alamofire.request(.GET, "https://www.eventbriteapi.com/v3/events/search/", parameters: ["q": "hack"])
-            .responseJSON { _, _, json, _ in
-                var obj = JSON(json!)
-                println(obj)
-                if obj["status_code"] == 401 {
-                    var url = NSURL(string: "https://www.eventbrite.com/oauth/authorize?response_type=code&client_id=FZXO4OPBM7EJVCFJP3")
-                    UIApplication.sharedApplication().openURL(url!)
+        println()
+        println()
+        println()
+        Alamofire.request(.GET, "https://www.eventbriteapi.com/v3/events/search?token=IK3UBM46PPY6TW6ITVSV", parameters: ["q": "hackathons", "sort_by" : "best", "venue.region": "CA"])
+            .responseJSON { (_, _, JSON, _) in
+                //println(JSON)
+                
+                let json = JSON as! NSDictionary
+                let events: AnyObject = json["events"]!
+                self.eventList = events as! NSMutableArray
+                for var i = 0; i < self.eventList.count; i++ {
+                    let firstHack: NSDictionary = self.eventList[i] as! NSDictionary //first event in brite call
+                    
+                    
+                    let nameDic: NSDictionary = (firstHack["name"] as? NSDictionary)!
+                    let name = nameDic["text"] as! String
+                    
+                    var parseStore = PFObject(className:"Hackathons")
+                    
+                    parseStore["Name"] = name
+                    parseStore.saveInBackgroundWithBlock {
+                        (success: Bool, error: NSError?) -> Void in
+                        if (success) {
+                            ProgressHUD.showSuccess(nil)
+                            
+                        } else {
+                            ProgressHUD.showError(nil)
+                        }
+                    }
+                    
+                    
                 }
         }
     }
