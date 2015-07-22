@@ -9,3 +9,4 @@ pod 'ParseUI'
 pod "TextFieldEffects"
 pod 'IQKeyboardManager'
 pod 'TagListView'
+pod 'SwiftyJSON', '~> 2.2.0'

@@ -59,6 +59,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods/JSQSystemSoundPlayer.framework'
   install_framework 'Pods/Parse.framework'
   install_framework 'Pods/ParseUI.framework'
+  install_framework 'Pods/SwiftyJSON.framework'
   install_framework 'Pods/TagListView.framework'
   install_framework 'Pods/TextFieldEffects.framework'
 fi
@@ -70,6 +71,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods/JSQSystemSoundPlayer.framework'
   install_framework 'Pods/Parse.framework'
   install_framework 'Pods/ParseUI.framework'
+  install_framework 'Pods/SwiftyJSON.framework'
   install_framework 'Pods/TagListView.framework'
   install_framework 'Pods/TextFieldEffects.framework'
 fi

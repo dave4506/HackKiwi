@@ -84,7 +84,7 @@
         <!--Find Hacks-->
         <scene sceneID="KN5-3t-VFV">
             <objects>
-                <viewController id="H1g-JJ-es5" sceneMemberID="viewController">
+                <viewController id="H1g-JJ-es5" customClass="hackTBVC" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wqG-sZ-q06"/>
                         <viewControllerLayoutGuide type="bottom" id="OTM-yq-hzW"/>

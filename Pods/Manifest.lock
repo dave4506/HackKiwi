@@ -10,6 +10,7 @@ PODS:
     - Bolts/Tasks (>= 1.2.0)
   - ParseUI (1.1.4):
     - Parse (~> 1.7)
+  - SwiftyJSON (2.2.0)
   - TagListView (0.1.4)
   - TextFieldEffects (0.4.0)
 
@@ -19,6 +20,7 @@ DEPENDENCIES:
   - IQKeyboardManager
   - JSQMessagesViewController
   - ParseUI
+  - SwiftyJSON (~> 2.2.0)
   - TagListView
   - TextFieldEffects
 
@@ -31,6 +33,7 @@ SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   Parse: 7dd027063c30a010356ec67515aca7787512b0ef
   ParseUI: d1228541b02a36a7354c8f47747f5f7a89cf1ff0
+  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
   TagListView: 86fcd7616973096aeaaf71bf774eecacf483c1fb
   TextFieldEffects: 757bb7871bb742d95e0782e85da923bbaf97660f
 
