@@ -49,6 +49,7 @@
 		07F7D8DD1B5D7C190047C0D0 /* walk1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7D8DC1B5D7C190047C0D0 /* walk1VC.swift */; };
 		07F7D8E01B5D8E370047C0D0 /* camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F7D8DF1B5D8E370047C0D0 /* camera.m */; };
 		4C4DD5C0217DA69CD994D119 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDA2CCDE3F7A20B2DC81D1D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		81D878381B60B47300C94AC3 /* HackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D878371B60B47300C94AC3 /* HackCollectionViewCell.swift */; };
 		81FE535D1B60261400C032B3 /* Hackathon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE535C1B60261400C032B3 /* Hackathon.swift */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +116,7 @@
 		07F7D8DE1B5D8E370047C0D0 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 		07F7D8DF1B5D8E370047C0D0 /* camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = camera.m; sourceTree = "<group>"; };
 		690622F687E210C49BA277DC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		81D878371B60B47300C94AC3 /* HackCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackCollectionViewCell.swift; sourceTree = "<group>"; };
 		81FE535C1B60261400C032B3 /* Hackathon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hackathon.swift; sourceTree = "<group>"; };
 		D5F2E3C0F706D9215307F387 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EFDA2CCDE3F7A20B2DC81D1D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +206,7 @@
 				076ADCB21B5E9B7C00949710 /* profileSVC.swift */,
 				07EDC1E11B5F0705002BC601 /* skillTVC.swift */,
 				07EDC1E51B5F403D002BC601 /* exploreHacksVC.swift */,
+				81D878371B60B47300C94AC3 /* HackCollectionViewCell.swift */,
 				07EDC1E31B5F3FFF002BC601 /* exploreHacks.storyboard */,
 				0770628A1B5DA3E9002C81AB /* walk3VC.swift */,
 				07363B191B5D49BA00709C14 /* Images.xcassets */,
@@ -469,6 +472,7 @@
 				07363B131B5D49BA00709C14 /* AppDelegate.swift in Sources */,
 				07967E5F1B5D73DB00CF4ADD /* signInVC.swift in Sources */,
 				07F7D8DD1B5D7C190047C0D0 /* walk1VC.swift in Sources */,
+				81D878381B60B47300C94AC3 /* HackCollectionViewCell.swift in Sources */,
 				81FE535D1B60261400C032B3 /* Hackathon.swift in Sources */,
 				077062921B5DB125002C81AB /* TagView.swift in Sources */,
 			);
