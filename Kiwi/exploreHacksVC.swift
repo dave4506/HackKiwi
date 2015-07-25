@@ -11,12 +11,13 @@ import Alamofire
 import SwiftyJSON
 import Parse
 import CoreLocation
+import UIKit
 
-class exploreHacksVC:UIViewController, CLLocationManagerDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class exploreHacksVC:UIViewController, CLLocationManagerDelegate,UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource {
     
+    @IBOutlet weak var tabsView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var locationNow: UILabel!
-    @IBOutlet weak var collectView: UICollectionView!
-    @IBOutlet weak var searchButton: UIButton!
     let locationManager = CLLocationManager()
     var city = ""
     var search = false;
@@ -26,6 +27,7 @@ class exploreHacksVC:UIViewController, CLLocationManagerDelegate,UICollectionVie
     private let sectionInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     var goto:String = ""
     
+    var buttons = ["Popular","Around You","Search","Popular on Kiwi"]
     
     var eventList:NSMutableArray = []
     var parseList:NSMutableArray = []
@@ -33,10 +35,10 @@ class exploreHacksVC:UIViewController, CLLocationManagerDelegate,UICollectionVie
     var finalList:NSMutableArray = []
     var isEqualName:Bool = true
     override func viewDidLoad() {
-        
-        self.collectView.delegate = self
-        self.collectView.dataSource = self
-        self.collectView.alwaysBounceVertical = true
+        self.tableView.delegate = self
+        self.tabsView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
 
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -45,156 +47,35 @@ class exploreHacksVC:UIViewController, CLLocationManagerDelegate,UICollectionVie
 
         
         self.updateHacks()
-        self.loadData()
-        
     }
-    func loadData(){
-        var query = PFQuery(className: "Hackathons")
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [AnyObject]?, error: NSError?) -> Void in
-            
-            if error == nil {
-                // The find succeeded.
-                println("Successfully retrieved \(objects!.count) scores.")
-                // Do something with the found objects
-                if let objects = objects as? [PFObject] {
-                    for object in objects {
-                        self.arr.addObject(object)
-                    }
-                }
-                self.collectView.reloadData()
-            } else {
-                // Log details of the failure
-                println("Error: \(error!) \(error!.userInfo!)")
-            }
-        }
-    
-    }
-    @IBAction func search(sender: AnyObject) {
-        if search == false {
-            arr = [];
-            let alertController = UIAlertController(title: "Search", message: nil, preferredStyle: .Alert)
-            
-            let changeAction = UIAlertAction(title: "Search", style: .Default) { (_) in
-                let loginTextField = alertController.textFields![0] as! UITextField
-                if loginTextField.text != "" {
-                    var word = loginTextField.text.lowercaseString
-                    var query = PFQuery(className: "Hackathons")
-                    query.whereKey("Name", containsString: word)
-                    query.findObjectsInBackgroundWithBlock {
-                        (objects: [AnyObject]?, error: NSError?) -> Void in
-                        
-                        if error == nil {
-                            // The find succeeded.
-                            println("Successfully retrieved \(objects!.count) scores.")
-                            // Do something with the found objects
-                            if let objects = objects as? [PFObject] {
-                                for object in objects {
-                                    self.arr.addObject(object)
-                                }
-                            }
-                            self.searchButton.titleLabel!.text = "Cancel"
-                            self.search = true;
-                            self.collectView.reloadData()
-                        } else {
-                            // Log details of the failure
-                            println("Error: \(error!) \(error!.userInfo!)")
-                        }
-                    }
-                }
-            }
-            
-            let cancelAction = UIAlertAction(title: "Cancel", style: .Destructive) { (_) in }
-            
-            alertController.addTextFieldWithConfigurationHandler { (textField) in
-                textField.placeholder = "Search Hacks"
-            }
-            alertController.addAction(changeAction)
-            alertController.addAction(cancelAction)
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
-            
-        } else {
-            arr = [];
-            var query = PFQuery(className: "Hackathons")
-            query.findObjectsInBackgroundWithBlock {
-                (objects: [AnyObject]?, error: NSError?) -> Void in
-                
-                if error == nil {
-                    // The find succeeded.
-                    println("Successfully retrieved \(objects!.count) scores.")
-                    // Do something with the found objects
-                    if let objects = objects as? [PFObject] {
-                        for object in objects {
-                            self.arr.addObject(object)
-                        }
-                    }
-                    self.searchButton.titleLabel!.text = "Search"
-                    self.search = false;
-                    self.collectView.reloadData()
-                } else {
-                    // Log details of the failure
-                    println("Error: \(error!) \(error!.userInfo!)")
-                }
-            }
-        }
-    }
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arr.count
     }
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell:HackCollectionViewCell = collectView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! HackCollectionViewCell
-        var obj = arr[indexPath.row] as! PFObject
-        
-        cell.name.text = obj["Name"] as? String
-        //cell.location.text = obj["location"] as! String
-        //let startDate:NSDate = NSDate()
-        //let endDate:NSDate = obj.createdAt!
-       // let cal = NSCalendar.currentCalendar()
-        //let unit:NSCalendarUnit = .CalendarUnitDay
-        //hours = obj["Hours"] as! Int
-        //let components = cal.components(unit, fromDate: startDate, toDate: endDate, options: nil)
-        //cell.date.text = "\(components.day) days till"
-        /*
-        let userImageFile = obj["image"] as! PFFile
-        userImageFile.getDataInBackgroundWithBlock {
-            (imageData: NSData?, error: NSError?) -> Void in
-            if error == nil {
-                if let imageData = imageData {
-                    let image = UIImage(data:imageData)
-                    cell.image.image = image
-                }
-            }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell:HackCollectionTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! HackCollectionTableViewCell
+            var obj = arr[indexPath.row] as! PFObject
+            cell.icon.layer.cornerRadius = 20;
+            cell.icon.clipsToBounds = true;
+            cell.name.text = obj["Name"] as? String
+            //var loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(50, 10, 37, 37)) as UIActivityIndicatorView
+            //loadingIndicator.startAnimating()
+            //loadingIndicator.center = cell.icon.center
+            //cell.contentView.addSubview(loadingIndicator)
+        if let url = obj["logoUrl"] as? String {
+            cell.icon.downloadImage(url)
         }
-        */
-        //cell.image.image = UIImage(named: "kiwi")
-        //cell.image.layer.cornerRadius = 39;
-       // cell.image.clipsToBounds = true
-        return cell;
+        
+        return cell
     }
+
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        var obj = arr[indexPath.row] as! PFObject
-        //goto = obj.objectId!
-        name = obj["Name"] as! String
-        //file = obj["image"] as! PFFile
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        self.performSegueWithIdentifier("hack", sender: self)
-        
-    }
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-        collectionView.deselectItemAtIndexPath(indexPath, animated: false)
-    }
-    func collectionView(collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-            return sectionInsets
-    }
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 1
-    }
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 1
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
@@ -218,10 +99,6 @@ class exploreHacksVC:UIViewController, CLLocationManagerDelegate,UICollectionVie
     func displayLocationInfo(placemark: CLPlacemark) {
         
         self.locationManager.stopUpdatingLocation()
-        //println(placemark.locality)
-        //println(placemark.postalCode)
-        //println(placemark.administrativeArea)
-        //println(placemark.country)
         
         city = placemark.administrativeArea
         
@@ -229,66 +106,110 @@ class exploreHacksVC:UIViewController, CLLocationManagerDelegate,UICollectionVie
         
     }
     
+    
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         println("Error: " + error.localizedDescription)
     }
     
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return buttons.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cell: tabCVC = tabsView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! tabCVC
+        var obj = self.buttons[indexPath.item] as! String
+        cell.name.text = obj;
+        return cell;
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
     
     func updateHacks(){
-        println()
-        println()
-        println()
+        ProgressHUD.show(nil)
+        self.arr = [];
         Alamofire.request(.GET, "https://www.eventbriteapi.com/v3/events/search?token=IK3UBM46PPY6TW6ITVSV", parameters: ["q": "hackathons", "sort_by" : "best", "venue.region": city])
             .responseJSON { (_, _, JSON, _) in
                 
-            let json = JSON as! NSDictionary
-            let events: AnyObject = json["events"]!
+                let json = JSON as! NSDictionary
+                let events: AnyObject = json["events"]!
                 
-            self.eventList = events as! NSMutableArray
-            for var i = 0; i < self.eventList.count; i++ {
-                let firstHack: NSDictionary = self.eventList[i] as! NSDictionary //first event in brite call
-                    
-                    
-                let nameDic: NSDictionary = (firstHack["name"] as? NSDictionary)!
-                let name = nameDic["text"] as! String
-                
-
-                
+                self.eventList = events as! NSMutableArray
                 var query = PFQuery(className: "Hackathons")
                 query.findObjectsInBackgroundWithBlock {
                     (objects: [AnyObject]?, error: NSError?) -> Void in
                     if error == nil {
                         if let objects = objects as? [PFObject] {
-                            for object in objects {
-                                if (object["Name"] as? String == name)  {
-                                    self.isEqualName = false
-                                }
-                            }
-                            if(self.isEqualName){
-                                var hackathonsParse = PFObject(className: "Hackathons")
-                                hackathonsParse["Name"] = name
-                               // hackathonsParse["Picture"] = UIImage(data: NSData(contentsOfURL: NSURL(string:parseImage)!)!)
-                                hackathonsParse.saveInBackgroundWithBlock {
-                                    (success: Bool, error: NSError?) -> Void in
-                                    if (success) {
-                                        // The object has been saved.
-                                    } else {
-                                        // There was a problem, check error.description
+                            var arr = [] as! NSMutableArray
+                            for var i = 0; i < self.eventList.count; i++ {
+                                var found = -1;
+                                var obj = PFObject(className: "Hackathon")
+                                for object in objects {
+                                    if i != self.eventList.count {
+                                        let firstHack: NSDictionary = self.eventList[i] as! NSDictionary //first event in brite call
+                                        let nameDic: NSDictionary = (firstHack["name"] as? NSDictionary)!
+                                        let name = nameDic["text"] as! String
+                                        if object["Name"] as! String == name {
+                                            found = i;
+                                            obj = object;
+                                        }
                                     }
                                 }
-                                self.isEqualName = true
+                                if found == -1 {
+                                            let firstHack: NSDictionary = self.eventList[i] as! NSDictionary //first event in brite call
+                                            let url: String  = (firstHack["url"] as? String)!
+                                            let nameDic: NSDictionary = (firstHack["name"] as? NSDictionary)!
+                                            let name = nameDic["text"] as! String
+                                            let start: NSDictionary = (firstHack["start"] as? NSDictionary)!
+                                            let end: NSDictionary = (firstHack["end"] as? NSDictionary)!
+                                            let dateFormatter = NSDateFormatter()
+                                            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                                            let start_utc = dateFormatter.dateFromString(start["utc"] as! String)
+                                            let end_utc = dateFormatter.dateFromString(end["utc"] as! String)
+                                    
+                                            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+                                            let start_loc = dateFormatter.dateFromString(start["local"] as! String)
+                                            let end_loc = dateFormatter.dateFromString(end["local"] as! String)
+                                            
+                                            var hackathonsParse = PFObject(className: "Hackathons")
+                                            
+                                            if let logo: NSDictionary = firstHack["logo"] as? NSDictionary {
+                                                let logoUrl: String = logo["url"] as! String
+                                                hackathonsParse["logoUrl"] = logoUrl
+                                            }
+                                            hackathonsParse["utcStart"] = start_utc
+                                            hackathonsParse["utcEnd"] = end_utc
+                                            hackathonsParse["locStart"] = start_loc
+                                            hackathonsParse["locEnd"] = end_loc
+                                            hackathonsParse["Name"] = name
+                                            hackathonsParse["url"] = url
+                                            arr.addObject(hackathonsParse)
+                                            self.arr.addObject(hackathonsParse)
+                                            
+                                } else {
+                                    self.arr.addObject(obj)
+                                }
                             }
-                                
+                                self.tableView.reloadData()
+                                PFObject.saveAllInBackground(arr as [AnyObject]){
+                                (success: Bool, error: NSError?) -> Void in
+                                if (success) {
+                                        ProgressHUD.dismiss()
+                                        println("Saved event")
+                                        // The object has been saved.
+                                    } else {
+                                    println(error)
+                                    // There was a problem, check error.description
+                                    }
+                                }
                         }
-                    }
-                    else{
-                        println("Error when querying")
-                    }
                 }
-                
             }
         }
-        self.loadData()
     }
-    
 }

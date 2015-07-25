@@ -99,7 +99,12 @@ import UIKit
         }
     }
     
-    private func layoutPlaceholderInTextRect() {        
+    private func layoutPlaceholderInTextRect() {
+        
+        if !text.isEmpty {
+            return
+        }
+        
         let textRect = textRectForBounds(bounds)
         var originX = textRect.origin.x
         switch self.textAlignment {
